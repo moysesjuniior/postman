@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "46de6f1b-a80a-46a5-9f11-ed2f689e3c04",
+		"name": "Requisições Open Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31090103"
+	},
+	"item": [
+		{
+			"name": "Open Weather",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "a80e1d5ab047df7093c0b9c5adbb7f7a",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "appid",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Guaruja&lang=pt_br&appid=a80e1d5ab047df7093c0b9c5adbb7f7a",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Guaruja"
+						},
+						{
+							"key": "lang",
+							"value": "pt_br"
+						},
+						{
+							"key": "appid",
+							"value": "a80e1d5ab047df7093c0b9c5adbb7f7a"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
