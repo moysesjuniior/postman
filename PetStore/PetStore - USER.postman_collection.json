@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "ed4c37b4-aa50-485d-8575-e3eb7397d257",
+		"name": "PetStore - USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31090103"
+	},
+	"item": [
+		{
+			"name": "Criar com Array",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 10,\r\n    \"username\": \"moysesjunior\",\r\n    \"firstName\": \"Moyses\",\r\n    \"lastName\": \"Junior\",\r\n    \"email\": \"moysesjunior@postman.com\",\r\n    \"password\": \"123456789\",\r\n    \"phone\": \"9876543210\",\r\n    \"userStatus\": 5\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithArray",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar com lista",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 10,\r\n    \"username\": \"moysesjunior\",\r\n    \"firstName\": \"Moyses\",\r\n    \"lastName\": \"Junior\",\r\n    \"email\": \"moysesjunior@postman.com\",\r\n    \"password\": \"123456789\",\r\n    \"phone\": \"9876543210\",\r\n    \"userStatus\": 5\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithList",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/moysesjunior",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"moysesjunior"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualização",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"username\": \"juniormoyses\",\r\n    \"firstName\": \"Junior\",\r\n    \"lastName\": \"Moyses\",\r\n    \"email\": \"juniormoyses@postman.com\",\r\n    \"password\": \"987654321\",\r\n    \"phone\": \"0123456789\",\r\n    \"userStatus\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/moysesjunior",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"moysesjunior"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/juniormoyses",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"juniormoyses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/login?username=juniormoyses&password=987654321",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "juniormoyses"
+						},
+						{
+							"key": "password",
+							"value": "987654321"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/logout",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 5,\r\n  \"username\": \"paçoquita\",\r\n  \"firstName\": \"Amendoin\",\r\n  \"lastName\": \"Paçoca\",\r\n  \"email\": \"paçoquita@postman.com\",\r\n  \"password\": \"123\",\r\n  \"phone\": \"0123456789\",\r\n  \"userStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
